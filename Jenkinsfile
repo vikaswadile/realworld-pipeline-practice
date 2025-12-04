@@ -2,7 +2,6 @@ pipeline {
     agent any
 
 tools {
-    jdk 'default-jdk'
     maven 'Maven'
 }
 
