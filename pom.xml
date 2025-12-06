@@ -31,6 +31,21 @@
         </dependency>
     </dependencies>
 
+    <!-- 🚀 Nexus Deployment Repositories -->
+    <distributionManagement>
+        <!-- Release repository -->
+        <repository>
+            <id>nexus-releases</id>
+            <url>http://nexus:8081/repository/mvn-repo/</url>
+        </repository>
+
+        <!-- Snapshot repository -->
+        <snapshotRepository>
+            <id>nexus-snapshots</id>
+            <url>http://nexus:8081/repository/maven-snapshots/</url>
+        </snapshotRepository>
+    </distributionManagement>
+
     <!-- Build plugins -->
     <build>
         <plugins>
